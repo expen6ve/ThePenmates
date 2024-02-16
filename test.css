@@ -1,0 +1,172 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+.hero-container {
+    background-color: #dad7d6;
+    height: 100vh;
+    color:#000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid; */
+}
+.hero-item {
+    width: 50%;
+    /* border: 2px solid; */
+    background-image: url(Images/feather.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    container-type: inline-size;
+
+}
+.hero-item > h1 {
+    font-family: 'Hedvig Letters Serif', serif;
+    font-weight: normal;
+    font-size: max(1rem, 15cqi);
+    color: #69605a;
+}
+.about-container{
+   
+    background-color: #c7c3c1;
+    text-align: center;
+}
+.about-item > ul {
+    margin: 0;
+}
+.about-item > ul > li{
+    display: inline-block;
+    font-size: max(1rem, 4cqi);
+    padding: 10rem;
+}
+.about-container :hover {
+    text-decoration: none;
+    color: #574c46;
+    
+}
+.about-item ul > li > a{
+    color: #69605a;
+}
+.desc-container {
+    height: 100vh;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #dad7d6;
+    
+}
+.desc-item {
+    width: 30%;
+    height: 70%;
+    flex: 1;
+    /* border: 1px solid red; */
+    /* overflow: hidden; */
+    position: relative;
+    
+}
+.desc-item > img {
+    height: 100%;
+    width: 100%;
+}
+.desc-item > h1 {
+    color: #69605a;
+    text-align: center;
+    font-family: 'Lugrasimo', cursive;
+    font-weight: normal;
+    font-size: max(1rem, 2cqi);
+}
+.desc-item:nth-child(3) > h1 {
+    position: absolute;
+    bottom: 0;
+}
+.work-container {
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    background-color: #141311;
+}
+.her-item {
+    width: 30%; 
+    /* border: 2px solid red; */
+    color: #ffffff;
+    font-family: 'Hedvig Letters Serif', serif;
+    font-weight: normal;
+    
+}
+.him-item {
+    width: 30%;
+    color: #ffffff;
+    font-family: 'Hedvig Letters Serif', serif;
+    font-weight: normal;
+    /* border: 2px solid red; */
+}
+.footer {
+    text-align: center;
+    font-family: 'Hedvig Letters Serif', serif;
+    font-weight: normal;
+    font-size: 15px;
+    background-color: #c7c3c1;
+    padding-bottom: 30px;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    /* border: 1px solid red; */
+}
+#footer_title {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    margin: 0;
+}
+#footer_links > a {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+@media screen and (max-width: 680px) {
+    .desc-container .desc-item:nth-child(2) {
+        display: none;
+    }
+    .her-item {
+        font-size: max(0.8rem, 2cqi);
+    }
+    .him-item {
+        font-size: max(0.8rem, 2cqi);
+    }
+    .desc-item > h1 {
+        padding: 10em 0 10em 0;
+    }
+    .work-container {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .work-container > h1 {
+        width: 500%;
+    }
+    .footer {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 408px) {
+    .desc-container .desc-item:nth-child(2) {
+        display: none;
+    }
+    .desc-container .desc-item > h1 {
+        font-size: max(1.2rem, 2cqi);
+    }
+    .about-item > ul > li{
+        display: inline-block;
+        font-size: max(2rem, 4cqi);
+        padding: 10rem;
+    }
+    .hero-item > h1 {
+        font-family: 'Hedvig Letters Serif', serif;
+        font-weight: normal;
+        font-size: max(1.5rem, 15cqi);
+        color: #69605a;
+    }
+}
