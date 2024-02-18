@@ -43,9 +43,7 @@ body {
     padding: 10rem;
 }
 .about-container :hover {
-    text-decoration: none;
-    color: #574c46;
-    
+    color: #574c46;  
 }
 .about-item ul > li > a{
     color: #69605a;
@@ -64,7 +62,7 @@ body {
     height: 70%;
     flex: 1;
     /* border: 1px solid red; */
-    /* overflow: hidden; */
+    overflow: hidden;
     position: relative;
     
 }
@@ -124,6 +122,18 @@ body {
 #footer_links > a {
     padding-left: 20px;
     padding-right: 20px;
+}
+.sub-footer{
+    background-color: #dad7d6;
+    color: #69605a;
+    text-align: center;
+    font-family: 'Hedvig Letters Serif', serif;
+    font-weight: normal;
+    font-size: 0.6em;
+}
+.sub-footer > .copyright-notice > h1{
+    display: inline-block;
+    padding: 0 0.2em 0 0.2em;
 }
 
 @media screen and (max-width: 680px) {

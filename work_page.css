@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    background-color: #c7c3c1;
+    font-size: 2.5em;
+    /* width: 100%; */
+    overflow: hidden;
+}
+
+.navbar > .navbar-link > ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    
+}
+.navbar > .navbar-link > ul > li {
+    display: inline-block;
+    padding: 0 1em 0 1em;
+}
+.navbar > .navbar-link > ul > li > a{
+    color: #69605a;
+}
+.navbar > .navbar-link > ul > li > a:hover{
+    color: #574c46;
+}
